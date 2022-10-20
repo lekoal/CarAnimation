@@ -1,7 +1,9 @@
 package com.example.caranimation.ui
 
-import androidx.lifecycle.ViewModel
+class MainActivityViewModel : MainContract.ViewModel() {
 
-class MainActivityViewModel : ViewModel() {
+    override fun setAnimation() {
+
+    }
 
 }
