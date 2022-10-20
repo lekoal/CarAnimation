@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="5000"
+        motion:autoTransition="jumpToStart">
+        <KeyFrameSet>
+            <KeyPosition />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="5"
+                android:translationY="-100dp" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="10"
+                android:translationY="-160dp"
+                android:translationX="20dp"
+                android:rotation="20" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="15"
+                android:translationX="60dp"
+                android:translationY="-210dp"
+                android:rotation="60" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="20"
+                android:translationX="120dp"
+                android:translationY="-235dp"
+                android:rotation="80" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="30"
+                android:translationX="280dp"
+                android:translationY="-250dp"
+                android:rotation="70" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="35"
+                android:translationX="320dp"
+                android:translationY="-290dp"
+                android:rotation="30" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="40"
+                android:translationX="325dp"
+                android:translationY="-340dp"
+                android:rotation="0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="45"
+                android:translationX="321dp"
+                android:translationY="-390dp"
+                android:rotation="-5" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="50"
+                android:translationX="310dp"
+                android:translationY="-450dp"
+                android:rotation="-15" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="55"
+                android:translationX="260dp"
+                android:translationY="-520dp"
+                android:rotation="-50" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="60"
+                android:translationX="180dp"
+                android:translationY="-540dp"
+                android:rotation="-80" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="65"
+                android:translationX="50dp"
+                android:translationY="-550dp"
+                android:rotation="-90" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="70"
+                android:translationX="50dp"
+                android:translationY="-550dp"
+                android:rotation="-100" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="75"
+                android:translationY="-570dp"
+                android:rotation="-110"
+                android:translationX="150dp" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="25"
+                android:translationX="180dp"
+                android:translationY="-235dp"
+                android:rotation="90" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="80"
+                android:translationX="300dp"
+                android:translationY="-600dp"
+                android:rotation="-115" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="85"
+                android:translationX="350dp"
+                android:translationY="-620dp"
+                android:rotation="-140" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="90"
+                android:rotation="-180"
+                android:translationX="360dp"
+                android:translationY="-650dp" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="95"
+                android:translationX="360dp"
+                android:translationY="-650dp"
+                android:rotation="-180" />
+            <KeyAttribute
+                motion:motionTarget="@+id/car"
+                motion:framePosition="100"
+                android:translationX="360dp"
+                android:translationY="-650dp"
+                android:rotation="-180" />
+        </KeyFrameSet>
+        <OnClick motion:targetId="@+id/car" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:pathMotionArc="startVertical" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:pathMotionArc="startHorizontal" />
+    </ConstraintSet>
+</MotionScene>
