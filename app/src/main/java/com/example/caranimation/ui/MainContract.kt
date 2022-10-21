@@ -8,6 +8,6 @@ interface MainContract {
     }
 
     abstract class ViewModel : androidx.lifecycle.ViewModel() {
-        abstract fun setAnimation()
+        abstract fun setAnimation(startX: Float, startY: Float)
     }
 }
